@@ -16,9 +16,21 @@ Pieza de código que permite a diferentes aplicaciones comunicarse entre si y co
 información. Es como un intérprete.
 Es lo que permite que "hablemos" el mismo idioma entre el cliente y el servidor. El 
 middelware es como la "carta" que le muestra al mozo el contenido de lo que hay o no hay.
+API: Forma de compartir información. Intermediario entre dos sistemas.
 
+CORS: Permite autorizar la intercomunicación. Información cruzada.
 
 */
+/* 
+FUNCION ASINCRONA
+Cuando se hace una función que pide algo a una API, esa información puede fallar
+entonces se debe preveer ese fallo. Instrucciones que se ejecutan
+mediante un mecanismo específico: Una promesa, un evento, lo que hace posible que 
+sea procesado en otro momento. Podemos cargar que no sea bloqueante del programa madre
+Que se puedan seguir haciendo pedidos hasta que llegue la respuesta.
+Si la respuesta es que no se puede acceder a la información, que lo estoy pidiendo mal o
+o que se cayo el servidor, podemos hacer que el bloque de código siga.
 
-
-console.log("Hola mundo");
+FUNCION SINCRONA
+Funciones que se ejecutan en el mismo bloque de código. 
+*/
