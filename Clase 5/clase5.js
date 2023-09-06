@@ -34,3 +34,31 @@ o que se cayo el servidor, podemos hacer que el bloque de código siga.
 FUNCION SINCRONA
 Funciones que se ejecutan en el mismo bloque de código. 
 */
+
+
+
+/*  ***API*** 
+https://jsonplaceholder.typicode.com/posts
+https://jsonplaceholder.typicode.com/users
+
+JSON: JAVASCRIPT OBJECT NOTATION
+Es el formato de cambio de datos. Es como el lenguaje en el que nos vamos a comunicar.
+Conjunto de notación literal de JAvascript.
+ */
+
+/* 
+BASE DE DATOS RELACIONAL
+*/
+
+// FUNCION QUE ENVÍO UN NRO DE POST Y ME VA A DECIR QUIÉN LO ESCRIBIÓ
+
+const getNameFetch = (idPost) => {
+   `https://jsonplaceholder.typicode.com/posts/${idPost}` 
+
+   //FETCH : Permite hacer llamadas asincronas en JS
+
+}
+
+getNameFetch(48) //id POST
+
+// min 51:26
