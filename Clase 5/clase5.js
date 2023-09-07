@@ -53,12 +53,28 @@ BASE DE DATOS RELACIONAL
 // FUNCION QUE ENVÍO UN NRO DE POST Y ME VA A DECIR QUIÉN LO ESCRIBIÓ
 
 const getNameFetch = (idPost) => {
-   `https://jsonplaceholder.typicode.com/posts/${idPost}` 
+   fetch(`https://jsonplaceholder.typicode.com/posts/${idPost}` ) //FETCH : Permite hacer llamadas asincronas en JS.
+   //traer información de esta API
 
-   //FETCH : Permite hacer llamadas asincronas en JS
+   //Tengo que guardarlo en una variable y separar el JSON
+
+   .then((respuesta)=>{ /* ESTO ES UN CALLBACK */
+      return respuesta.json() // Lo convierto en JSON
+   })
+//Lo convertido lo tengo que guardar en una variable
+   .then((posteo)=>{ 
+      fetch(`https://jsonplaceholder.typicode.com/users/${posteo.userId}`)
+      .then((respuesta)=>{ /* ESTO ES UN CALLBACK */
+         return respuesta.json() // Lo convierto en JSON
+         })
+         .then((user)=>{
+            console.log(user); 
+            console.log(`${user.name}`)
+         })
+   })
+
 
 }
 
 getNameFetch(48) //id POST
 
-// min 51:26
