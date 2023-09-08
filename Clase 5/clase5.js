@@ -53,28 +53,32 @@ BASE DE DATOS RELACIONAL
 // FUNCION QUE ENVÍO UN NRO DE POST Y ME VA A DECIR QUIÉN LO ESCRIBIÓ
 
 const getNameFetch = (idPost) => {
-   fetch(`https://jsonplaceholder.typicode.com/posts/${idPost}` ) //FETCH : Permite hacer llamadas asincronas en JS.
-   //traer información de esta API
 
-   //Tengo que guardarlo en una variable y separar el JSON
+   try {
+      fetch(`https://jsonplaceholder.typicode.com/posts/${idPost}`) //FETCH : Permite hacer llamadas asincronas en JS.
+         //traer información de esta API
 
-   .then((respuesta)=>{ /* ESTO ES UN CALLBACK */
-      return respuesta.json() // Lo convierto en JSON
-   })
-//Lo convertido lo tengo que guardar en una variable
-   .then((posteo)=>{ 
-      fetch(`https://jsonplaceholder.typicode.com/users/${posteo.userId}`)
-      .then((respuesta)=>{ /* ESTO ES UN CALLBACK */
-         return respuesta.json() // Lo convierto en JSON
+         //Tengo que guardarlo en una variable y separar el JSON
+
+         .then((respuesta) => { /* ESTO ES UN CALLBACK */
+            return respuesta.json() // Lo convierto en JSON
          })
-         .then((user)=>{
-            console.log(user); 
-            console.log(`${user.name}`)
-            console.log(`vive en la calle ${user.address.street}`)
-            console.log(`${user.address.geo.lat}`)
+         //Lo convertido lo tengo que guardar en una variable
+         .then((posteo) => {
+            fetch(`https://jsonplaceholder.typicode.com/users/${posteo.userId}`)
+               .then((respuesta) => { /* ESTO ES UN CALLBACK */
+                  return respuesta.json() // Lo convierto en JSON
+               })
+               .then((user) => {
+                  console.log(user);
+                  console.log(`${user.name}`)
+                  console.log(`vive en la calle ${user.address.street}`)
+                  console.log(`${user.address.geo.lat}`)
+               })
          })
-   })
-
+   } catch (error){
+      console.log(error);
+   }
 
 }
 
