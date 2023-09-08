@@ -70,6 +70,8 @@ const getNameFetch = (idPost) => {
          .then((user)=>{
             console.log(user); 
             console.log(`${user.name}`)
+            console.log(`vive en la calle ${user.address.street}`)
+            console.log(`${user.address.geo.lat}`)
          })
    })
 
