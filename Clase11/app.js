@@ -44,19 +44,20 @@ let btnSiguiente = document.querySelector(".btnSiguiente");
             console.log(datos.results);
             let peliculas = "";
 
-            datos.results.foreach((pelicula =>{
-                peliculas += `<div class="peliculas">
-                <img class="poster" src="http://image.tmdb.org/t/p/w500${pelicula.poster_path}"/>
-                <h3>${pelicula.title}</h3>
-                </div>`
-
-                document.querySelector(".contenedor").innerHTML=peliculas
-            })
-
-            )
-        }
-    } catch (error) {
+            datos.results.forEach((pelicula) => {
+                peliculas += `<div class="pelicula">
+                <img class= "poster" src= "https://image.tmdb.org/t/p/w300${pelicula.poster_path}"/>
+                <h3 class= "titulo">${pelicula.title}</h3>
+                </div>
+                `;
         
-    }
- }
- cargarPeliculas();
+                document.querySelector(".contenedor").innerHTML = peliculas;
+                
+              });
+            }else if (respuesta.status===404){
+                console.log("error 404 nos vemos en otro lugar");
+            }
+          } catch (error) {
+            console.log(error);
+          }
+        };
