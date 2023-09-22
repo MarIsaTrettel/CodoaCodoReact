@@ -4,3 +4,12 @@
     flex-wrap: wrap;
     gap:10px;
 }
+
+img{
+    border-radius: 5%;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
