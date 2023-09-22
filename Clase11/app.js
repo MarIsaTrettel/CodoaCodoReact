@@ -49,6 +49,8 @@ let btnSiguiente = document.querySelector(".btnSiguiente");
                 <img class="poster" src="http://image.tmdb.org/t/p/w500${pelicula.poster_path}"/>
                 <h3>${pelicula.title}</h3>
                 </div>`
+
+                document.querySelector(".contenedor").innerHTML=peliculas
             })
 
             )
