@@ -1,10 +1,12 @@
+import "./Card.css"
+
 
 // eslint-disable-next-line react/prop-types
 function Card ({apellido, nacimiento, clubes, mundial, late}){
     return ( 
         <>
-        <h2>{apellido}</h2> 
-        <small>{nacimiento}</small>
+        <h2 style={{backgroundColor:mundial?"gold":"silver", color:"white"}  }>{apellido}</h2> 
+        <small className= {(mundial? "dorado": "plateado")}>{nacimiento}</small>
         <p>{clubes}</p>
         <p>Gano un mundial{mundial}</p>
         <p>{late}</p>
