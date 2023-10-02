@@ -1,7 +1,12 @@
-function Boton() { // Para diferenciar una funcion la pongo en mayúscula
+
+// eslint-disable-next-line react/prop-types
+function Boton ({numero}) {// Para diferenciar una funcion la pongo en mayúscula
 
     return (
-        <button>1</button>
+        <>
+        <button>{numero}</button>
+        </>
+        
     )
 }
 
