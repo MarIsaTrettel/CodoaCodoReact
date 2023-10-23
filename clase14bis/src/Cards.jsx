@@ -1,4 +1,4 @@
-function Cards() {
+function Cards(apellido,nacimiento,clubes,mundial,late) {
 
 return (
     <>
