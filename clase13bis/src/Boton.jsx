@@ -1,8 +1,14 @@
-function Boton() {
 
-return (
-    <button>1</button>
-)
-}
+// eslint-disable-next-line react/prop-types
+function Boton ({numero}) {
 
-export default Boton
+    return(
+        <>
+         <button>{numero}</button>
+        </>
+    )
+    
+    }
+    
+    export default Boton
+    
