@@ -1,4 +1,4 @@
-
+import './Cards.css'
 // eslint-disable-next-line react/prop-types
 function Cards({apellido,nacimiento,clubes,mundial,late}) {
 
