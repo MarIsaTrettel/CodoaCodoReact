@@ -37,7 +37,7 @@ let btnSiguiente = document.querySelector(".btnSiguiente");
 
  const cargarPeliculas = async () =>{
     try {
-        let respuesta = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ef0c38873ac480926387f7960b82f6a0&language=es-MX&page=${pagina}`);
+        let respuesta = await fetch(``);
         console.log(respuesta);
         if (respuesta.status == 200){ 
             let datos = await respuesta.json()
