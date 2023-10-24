@@ -2,6 +2,7 @@
 import ReactDOM from 'react-dom/client'
 
 import Cards from './Cards.jsx'
+import './Cards.css'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
