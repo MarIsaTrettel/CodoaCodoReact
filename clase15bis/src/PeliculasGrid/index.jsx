@@ -1,5 +1,9 @@
+import "./peliculasGrid.css"
+
 import peliculas from "../peliculas.json"
 import { PeliculasCard } from '../PeliculasCard'
+
+
 
 export function PeliculasGrid(){
 
