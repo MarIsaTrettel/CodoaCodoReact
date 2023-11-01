@@ -1,5 +1,5 @@
 
-
+import { Boton } from "./Boton"
 
 export const Counter = () => {
     return(
@@ -10,7 +10,11 @@ export const Counter = () => {
 
 export const Counter2 = () => {
     return(
+        <>
+        <Boton/>
         <h1>COUNTER 2</h1>
+        </>
+        
 
     )
 }
