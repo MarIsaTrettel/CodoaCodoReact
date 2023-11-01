@@ -8,5 +8,13 @@ export const Counter = () => {
     )
 }
 
+export const Counter2 = () => {
+    return(
+        <h1>COUNTER 2</h1>
+
+    )
+}
+
+
 
 
