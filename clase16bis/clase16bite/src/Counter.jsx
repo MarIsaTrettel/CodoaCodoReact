@@ -1,7 +1,12 @@
-function Counter(){
+
+
+
+export const Counter = () => {
     return(
-        <h1>COUNTER</h1>
+        <h1>COUNTER new</h1>
 
     )
 }
-export default Counter
+
+
+
