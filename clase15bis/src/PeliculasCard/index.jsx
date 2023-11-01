@@ -1,3 +1,5 @@
+import "./PeliculasCard.css"
+
 
 export function PeliculasCard({pelicula}) {
     
