@@ -1,9 +1,10 @@
 
 
 
-export const Boton = () =>{
+// eslint-disable-next-line react/prop-types
+export const Boton = ({numero, onClick}) =>{
 
     return(
-        <button>BTN</button>
+        <button onClick={onClick}>NUMERO: {numero} </button>
     )
 }

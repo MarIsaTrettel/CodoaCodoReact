@@ -11,8 +11,9 @@ export const Counter = () => {
 export const Counter2 = () => {
     return(
         <>
-        <Boton/>
         <h1>COUNTER 2</h1>
+        <Boton numero={1} onClick={()=>alert("Presionaste el boton")}/>
+        <Boton numero={2}/>
         </>
         
 
