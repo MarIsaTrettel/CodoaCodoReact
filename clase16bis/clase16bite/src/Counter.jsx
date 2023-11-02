@@ -17,6 +17,7 @@ export const Counter2 = () => {
             <h1>COUNTER 2</h1>
             <Boton numero={1} onClick={() => alert("Presionaste el boton")} />
             <Boton numero={2} />
+            <p>CONTADOR: {contador}</p>
         </>
 
 
