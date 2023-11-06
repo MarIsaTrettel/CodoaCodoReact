@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export const Counter3 =() =>{
 
     const [contador, setContador]= useState(0);
+
+    useEffect(() =>{
+        console.log("cambio el contador")
+    }, [contador])
+    
     return(
         <>
             <p>Contador:{contador}</p>
