@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Boton } from "./Boton"
+import { Boton } from "./Boton.jsx"
 
 export const Counter = () => {
     return (
@@ -10,7 +10,7 @@ export const Counter = () => {
 
 export const Counter2 = () => {
 
-    const [contador, setContador] = useState (0)
+    const [contador, setContador] = useState(0)
 
     return (
         <>
@@ -18,6 +18,7 @@ export const Counter2 = () => {
             <Boton numero={1} onClick={() => setContador(contador+1)} />
             <Boton numero={2} />
             <p>CONTADOR: {contador}</p>
+            <button onClick={()=>setContador(contador+1)}>+</button>
         </>
 
 

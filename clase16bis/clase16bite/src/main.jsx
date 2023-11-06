@@ -8,5 +8,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Counter />
     <Counter2/>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
