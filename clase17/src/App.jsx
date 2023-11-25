@@ -1,21 +1,26 @@
 
-import "./app.css"
+import "./app.css";
 import { LandinPage } from "./pages/LandingPage";
-import {BrowserRouter, Routes, Route} from "react-router-dom"
+import { DrinksDetails } from "./pages/DrinksDetails";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 
 export const App = () => {
 
+
+
     return (
         <BrowserRouter>
-        
-            <header className="title">THE COCKTAIL DB</header>
-            
+            <header >
+                <Link to="/" className="title">
+                    <h1 className="title">THE COCKTAIL DB</h1>
+                </Link>
+            </header>
             <Routes>
-            <Route path="/" element={<LandinPage/>}/>
-            <Route path="/drinksDetails" element="Detalles del trago"/>
-            
+                <Route path="/" element={<LandinPage />} />
+                <Route path="/drink/:idDrink" element={<DrinksDetails />} />
+
             </Routes>
-        </BrowserRouter>
+        </BrowserRouter >
     )
 };

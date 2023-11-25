@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   
   }
@@ -10,9 +9,13 @@
 
 .title{
   text-transform: uppercase;
+  color: black;
+  margin-bottom: -40px;
+  margin-top: 20px;
   font-size: 7rem;
   text-shadow: 0 0 10px white;
-
+  list-style: none !important;
+  text-decoration: none !important;
 
 }
 

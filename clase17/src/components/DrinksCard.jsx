@@ -3,15 +3,17 @@ import "./DrinksCard.css";
 
 
 
-export const DrinksCard = (drink) => {
+export const DrinksCard = ({drink}) => {
+
+    const imgURL = drink.strDrinkThumb;
     
     return (
     
         <li className="drinksCard">
-            <Link to={`/lookup.php?i=${drink.drink.idDrink}`} className="drinksCardLink" >
-            <img className="drinkImage" src={drink.drink.strDrinkThumb} alt={drink.drink.strDrink} />
+            <Link to={`/drink/${drink.idDrink}`}>
+            <img className="drinkImage" src={imgURL} alt={drink.strCategory} />
             <div className="drinksName">
-                {drink.drink.strDrink}
+                {drink.strDrink}
             </div>
             </Link>
         </li>
