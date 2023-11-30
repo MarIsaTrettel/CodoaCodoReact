@@ -1,10 +1,10 @@
 import { get } from "../../utils/httpCliente";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
-import "./DrinksDetails.css"
+import "./DetalleTragos.css"
 
 
-export const DrinksDetails = () => {
+export const DetalleTragos = () => {
 
   const [drink, setDrinks] = useState(null);
 
