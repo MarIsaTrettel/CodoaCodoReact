@@ -54,7 +54,7 @@ export const Show = () => {
     // Use Effect
     useEffect(() => {
         getHeroes();
-    });
+    }, []);
 
     return (
         <>
